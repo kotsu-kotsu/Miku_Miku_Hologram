@@ -1,0 +1,267 @@
+html{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    background:black;
+    overflow:hidden;
+    font-family:'Marvel', sans-serif;
+}
+#mmd{
+    position:absolute;
+    top:calc(50% - 50vmin);
+    left:calc(50% - 50vmin);
+    width: calc(100vmin);
+    height: calc(100vmin);
+    display:none;
+}
+#top_light{
+    position:absolute;
+    top:calc(50% - 12vmin);
+    left:calc(50% - 12vmin);
+    width: calc(24vmin);
+    height: calc(24vmin);
+    background:white;
+    display:none;
+}
+#manual{
+    position:absolute;
+    background-image:url("../img/manual.png");
+    background-size: contain;
+    top:calc(50% - 50vmin);
+    left:calc(50% - 50vmin);
+    width: calc(100vmin);
+    height: calc(100vmin);
+    display:none;
+}
+#how_to{
+    cursor:pointer;
+    color:#FF722F;
+}
+#how_to:hover{
+    color:#FF9D5F;
+}
+
+
+#bg_video {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#cover{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(255, 255, 255, 0.1)
+}
+
+#menu{
+    background:rgba(0, 0, 0, 0.6);
+    position:absolute;
+    top:calc(50% - 130px);
+    left:calc(50% - 250px);
+    width:500px;
+    height:260px;
+    display:none;
+}
+#params{
+    color:rgb(160, 160, 160);
+    font-size:0.5em;
+    display:none;
+}
+#logo{
+    color:rgb(160, 160, 160);
+    font-size:1em;
+    position:absolute;
+    width:60px;
+    height:40px;
+    top:calc(100% - 40px);
+    left:calc(100% - 60px);
+    display:none;
+}
+
+#title{
+    color:white;
+    text-align:center;
+    font-size:2.5em;
+    margin-top:20px;
+}
+.button{
+    background:#FF722F;
+    padding-top:8px;
+    font-size:1.5em;
+    color:white;
+    text-align:center;
+    width:150px;
+    height:40px;
+    cursor:pointer;
+}
+.button:hover{
+    background:#FF9D5F;
+}
+#start{
+    position:absolute;
+    top:120px;
+    left:calc(50% - 75px);
+
+}
+#footer{
+    text-align:right;
+    margin-left:20px;
+    padding-top:1px;
+    position:absolute;
+    top:238px;
+    width:calc(100% - 40px);
+    height:20px;
+    border-top:white 2px solid;
+    color:white;
+    font-size:0.8em;
+}
+#footer a{
+    text-decoration:none;
+    color:white;
+}
+#footer a:hover{
+    color:#FF9D5F;
+}
+
+#step1{
+    background:rgba(0, 0, 0, 0.6);
+    position:absolute;
+    top:calc(50% - 130px);
+    left:calc(50% - 250px);
+    width:500px;
+    height:260px;
+    display:none;
+    color:white;
+}
+#step2{
+    background:rgba(0, 0, 0, 0.6);
+    position:absolute;
+    top:calc(50% - 130px);
+    left:calc(50% - 250px);
+    width:500px;
+    height:260px;
+    display:none;
+    color:white;
+}
+#step3{
+    background:rgba(0, 0, 0, 0.6);
+    position:absolute;
+    top:calc(50% - 130px);
+    left:calc(50% - 250px);
+    width:500px;
+    height:260px;
+    display:none;
+    color:white;
+}
+.title1{
+    border-bottom:white 2px solid;
+    border-left:white 8px solid;
+    position:absolute;
+    top:10px;
+    width:calc(100% - 53px);
+    margin-left:20px;
+    height:20px;
+    font-size:1em;
+    padding-left:5px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+.disc{
+    position:absolute;
+    width:calc(100% - 40px);
+    margin-left:20px;
+    height:160px;
+    border-bottom:2px white solid;
+    top:50px;
+}
+#disc1{
+    background-image: url("../img/disc1.png");
+    background-size: contain;
+}
+#disc1_txt{
+    position:absolute;
+    font-size:0.7em;
+    top:115px;
+    left:210px;
+    width:240px;
+    overflow:hidden;
+}
+#model_load{
+    position:absolute;
+    top:227px;
+    left:200px;
+}
+
+#disc2{
+    background-image: url("../img/disc2.png");
+    background-size: contain;
+}
+#disc2_txt{
+    position:absolute;
+    font-size:0.7em;
+    top:115px;
+    left:220px;
+    width:220px;
+}
+#motion_load{
+    position:absolute;
+    top:227px;
+    left:200px;
+}
+#disc3{
+    background-image: url("../img/disc3.png");
+    background-size: contain;
+}
+#disc3_txt{
+    position:absolute;
+    font-size:0.7em;
+    top:115px;
+    left:220px;
+    width:220px;
+}
+#music_load{
+    position:absolute;
+    top:227px;
+    left:200px;
+}
+
+#load_screen{
+    position:absolute;
+    height:100%;
+    width:100%;
+    color:white;
+    display:none;
+}
+#loader{
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    color: #efefef;
+    position:absolute;
+    top: 50%;
+    left:calc(50% - 150px);
+}
+#bar {
+    width: 300px;
+    height: 2px;
+    border: 1px solid #efefef;
+    padding: 1px;
+    margin-top: 10px;
+    font-size: 1px;
+}
+#bar span {
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #efefef;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Miku Miku Hologram</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/favicon-32.png?versino=new" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/favicon-96.png?version=new" sizes="96x96">
+        <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <meta name="keywords" content="Miku Miku Hologram,MMD,MMH,初音ミク,ホログラム,ミクさん召喚部,three.js" />
+        <meta name="description" content="Miku Miku Hologram は初音ミクなどの3Dモデルをホログラム?として召喚するプログラムです．透明の四角錐(ピラミッド)とMMDのモデル・モーション・音源を用意していただくだけで，3Dモデルを召喚できます．"/>
+    </head>
+    <body>
+        <div id="params">
+            <div class="param" id="model_name">モデル　 　　　:</div>
+            <div class="param" id="motion_name">モーション　　 :</div>
+            <div class="param" id="audio_name">音源 　　　　　:</div>
+            <div class="param" id="audio_time">時間 　　　　　: 00:00 / 00:00</div>
+            <div class="param" id="camera_y">カメラの高さ　 : 14.0</div>
+            <div class="param" id="camera_z">モデルとの距離 : 210</div>
+            <div class="param" id="model_x">モデルの X 座標 : 0.0</div>
+            <div class="param" id="model_z">モデルの Z 座標 : 0.0</div>
+            <div class="param" id="model_y">モデルの Y 回転 : 0</div>
+            <div class="param" id="light_angle">照明の範囲　　: 0.30</div>
+            <div class="param" id="lag">タイミング　　: 0.0</div>
+            <div class="param" id="how_to">使い方 [ H ]</div>
+        </div>
+        <div id="logo">Miku Miku Hologram</div>
+        <div id="mmd"></div>
+        <div id="top_light"></div>
+        <div id="manual"></div>
+        <video autoplay loop id="bg_video">
+            <source src="video/loop.mp4" type="video/mp4">
+        </video>
+        <div id="cover"></div>
+        <div id="menu">
+            <div id="title">Miku Miku Hologram</div>
+            <div class="button" id="start">START</div>
+            <div id="footer"><a href="#">github code</a></div>
+        </div>
+        <div id="step1">
+            <div class="title1">手順 1 / 3: MMDモデル（pmd / pmx ファイル）の読み込み</div>
+            <div class="disc" id="disc1">
+                <div id="disc1_txt">MMDの3Dモデルを用意してください．モデルが入っている<span style="color:#FF722F; font-size:1.4em;">フォルダ</span>を選択してください．</div>
+            </div>
+            <input id="model_load" type="file" webkitdirectory directory>
+        </div>
+        <div id="step2">
+            <div class="title1">手順 2 / 3: MMDモーション（vmd ファイル）の読み込み</div>
+            <div class="disc" id="disc2">
+                <div id="disc2_txt">MMDのモーションファイルを用意し，該当ファイルを選択してください．</div>
+            </div>
+            <input id="motion_load" type="file">
+        </div>
+        <div id="step3">
+            <div class="title1">手順 3 / 3: 音源（mp3 / m4a / wav ファイル）の読み込み</div>
+            <div class="disc" id="disc3">
+                <div id="disc3_txt">音楽ファイルを用意し，該当ファイルを選択してください．</div>
+            </div>
+            <input id="music_load" type="file">
+        </div>
+        <div id="load_screen">
+            <div id="use_desc">
+            </div>
+            <div id="loader">
+                <span id="load-text">Loading Model 0%</span>
+                <div id="bar"><span></span></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="js/three.min.js"></script>
+        <script type="text/javascript" src="js/charsetencoder.min.js"></script>
+        <script type="text/javascript" src="js/ammo.js"></script>
+        <script type="text/javascript" src="js/TGALoader.js"></script>
+        <script type="text/javascript" src="js/MMDLoader.js"></script>
+        <script type="text/javascript" src="js/CCDIKSolver.js"></script>
+        <script type="text/javascript" src="js/MMDPhysics.js"></script>
+        <script type="text/javascript" src="js/Detector.js"></script>
+        <script type="text/javascript" src="js/stats.min.js"></script>
+        <script type="text/javascript" src="js/app.js?version=new"></script>
+    </body>
+</html>
