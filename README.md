@@ -6,4 +6,4 @@ three.js r81
 jquery
 
 ##コンセプト
-紹介動画 [【ブラウザで動く】ホログラム!?で初音ミクを召喚してみた【ホログラム】](http://www.nicovideo.jp/watch/sm28389424)  
+紹介動画 [【ブラウザで動く】ホログラム?で初音ミクを召喚してみた【ホログラム】](http://www.nicovideo.jp/watch/sm29945692)  
